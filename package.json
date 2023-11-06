@@ -120,5 +120,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/mrvautin/expressCart/issues"
-  }
+  },
+  "scripts": {
+  "start": "npm start --production",
+  "testdata": "npm run testdata",
+  "start-with-testdata": "npm run testdata && npm start --production"
+}
 }
