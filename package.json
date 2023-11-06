@@ -125,5 +125,5 @@
   "start": "npm start --production",
   "testdata": "npm run testdata",
   "start-with-testdata": "npm run testdata && npm start --production"
-}
+  }
 }
