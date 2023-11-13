@@ -1,3 +1,15 @@
+const appd = require('appdynamics');
+
+appd.profile({
+  controllerHostName: process.env.APPDYNAMICS_CONTROLLER_HOST_NAME,
+  controllerPort: process.env.APPDYNAMICS_CONTROLLER_PORT,
+  controllerSslEnabled: process.env.APPDYNAMICS_CONTROLLER_SSL_ENABLED,
+  accountName: process.env.APPDYNAMICS_ACCOUNT_NAME,
+  accountAccessKey: process.env.APPDYNAMICS_ACCOUNT_ACCESS_KEY,
+  applicationName: process.env.APPDYNAMICS_APPLICATION_NAME,
+  tierName: process.env.APPDYNAMICS_TIER_NAME,
+  nodeName: process.env.APPDYNAMICS_NODE_NAME,
+});
 const fs = require('fs');
 const yenv = require('yenv');
 if(fs.existsSync('./env.yaml')){
